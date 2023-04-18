@@ -24,4 +24,4 @@ jobs:
     - name: Build
       run: mvn compile
     - name: Test
-      run: mvn surefire:test
+      run: mvn test
