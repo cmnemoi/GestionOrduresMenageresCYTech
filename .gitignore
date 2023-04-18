@@ -24,7 +24,7 @@ hs_err_pid*
 replay_pid*
 
 # maven
-maven-status/
+maven*/
 
 # surefire reports
 target/surefire-reports/
