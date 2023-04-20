@@ -5,10 +5,11 @@ app-build:
 app-compile:
 	docker compose exec app mvn compile
 
-app-start: app-compile app-stop 
+app-start: app-stop 
 	docker compose up -d --no-recreate
+	mvn compile
 	@echo "Waiting for app to start..."
-	sleep 5
+	sleep 3
 	@echo "App started! Visit http://localhost to see it."
 
 app-stop:
