@@ -28,3 +28,6 @@ maven*/
 
 # surefire reports
 target/surefire-reports/
+
+# environment
+.env

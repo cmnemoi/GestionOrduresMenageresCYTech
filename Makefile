@@ -17,3 +17,6 @@ app-stop:
 app-watch: app-stop
 	docker compose up --no-recreate
 
+test:
+	docker compose exec app mvn test
+
