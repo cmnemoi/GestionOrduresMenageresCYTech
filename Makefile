@@ -2,7 +2,10 @@ app-build:
 	docker compose build
 	docker compose up --no-start
 
-app-start: app-stop
+app-compile:
+	docker compose exec app mvn compile
+
+app-start: app-stop app-compile
 	docker compose up -d --no-recreate
 	@echo "Waiting for app to start..."
 	sleep 5
