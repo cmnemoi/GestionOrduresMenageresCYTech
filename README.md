@@ -38,6 +38,10 @@ TODO (Installer WSL2 puis Docker ou Java/Maven/PostgreSQL)
 * Compiler l'application pour appliquer les modifications : `make app-compile`
 * Lancer les tests : `make test`
 
+# Déploiement
+
+L'application est déployée automatiquement sur https://ordures-menageres-cytech.herokuapp.com/ à chaque merge sur la branche `main`.
+
 # Licence
 
 [Licence MIT](LICENSE) 
