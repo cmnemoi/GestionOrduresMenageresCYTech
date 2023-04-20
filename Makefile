@@ -1,8 +1,16 @@
-compile:
-	mvn compile
+app-build:
+	docker compose build
+	docker compose up --no-start
 
-run: compile
-	/usr/bin/env /usr/lib/jvm/java-11-openjdk-amd64/bin/java -cp target/classes cytech.App 
+app-start: app-stop
+	docker compose up -d --no-recreate
+	@echo "Waiting for app to start..."
+	sleep 5
+	@echo "App started! Visit http://localhost to see it."
 
-test:
-	mvn test
+app-stop:
+	docker compose stop
+
+app-watch: app-stop
+	docker compose up --no-recreate
+
