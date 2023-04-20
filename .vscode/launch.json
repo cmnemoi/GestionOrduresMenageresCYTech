@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-App<GestionOrduresMenageresCYTech>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cytech.GestionOrduresMenageres.App",
+            "projectName": "GestionOrduresMenageresCYTech",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
