@@ -15,7 +15,8 @@ Je vous invite à utiliser [Visual Studio Code](https://code.visualstudio.com/) 
 ### Avec Docker (recommandé)
 
 **Docker** devrait déjà être installé sur votre PC CY Tech. Il suffit alors de :
-
+ 
+ * copier les variables d'environnement : `cp .env.dev .env`
  * construire l'image Docker du projet : `make app-build`
  * lancer l'application : `make app-start`
 
