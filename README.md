@@ -25,7 +25,7 @@ Si tout se passe bien, vous devriez voir l'application sur [http://localhost](ht
 ### Sans Docker
 
 Le **Java Development Kit (JDK) 11** et **Apache Maven** devrait déjà être installés sur vos PC CY Tech.
-TODO : installer PostgreSQL
+TODO : installer et configure PostgreSQL
 
 ## Windows
 
@@ -36,6 +36,7 @@ TODO (Installer WSL2 puis Docker ou Java/Maven/PostgreSQL)
 * Lancer l'application : `make app-start`
 * Arrêter l'application : `make app-stop`
 * Compiler l'application pour appliquer les modifications : `make app-compile`
+* Lancer les tests : `make test`
 
 # Licence
 
